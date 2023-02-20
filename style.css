@@ -6,6 +6,8 @@
    margin: 0 auto;
    display: flex;
    justify-content: center;
+   top:30px;
+   bottom: 0px;
 }
 
 iframe{
@@ -13,12 +15,12 @@ iframe{
    display: flex;
    align-content: center;
    justify-content: center;
-   top: 20px;
-   left: 402px;
+   top: 42px;
+   left: 141px;
    z-index: 1;
    visibility: hidden;
-   width: 546px;
-   height: 304px;
+   width: 859px;
+   height: 500px;
 }
    
 #Hello{
@@ -36,7 +38,7 @@ iframe{
    top:0px;
    height: 250px;
    width: 200%;
-   right:55px;
+   right:160px;
    position: relative;
    animation: mymove 2s infinite;
 }
@@ -44,7 +46,7 @@ iframe{
 
  @keyframes mymove {
   from {top: 0px;}
-  to {top: 60px;}
+  to {top: 150px;}
 }
 
 #Goodbye{
@@ -52,9 +54,16 @@ iframe{
    font-size: 70px;
    display: flex;
    justify-content: center;
-   top:100px;
-   left:488px;
+   left:560px;
+   max-width: 20px;
    visibility: hidden;
+}
+
+#Goodbye img{
+   top:0px;
+   height: 250px;
+   position: relative;
+   animation: mymove 2s infinite;
 }
 
 .btn1{
@@ -120,4 +129,34 @@ iframe{
    border-radius: 50%;
    background: transparent;
 
+}
+
+#table{
+   background-size: cover;
+   background-repeat: no-repeat;
+   border: 1px solid;
+   border: transparent;
+   position: absolute;
+   top: 60px;
+   width: 857px;
+   left: 141px;
+   height:460px;
+   visibility: hidden;
+
+   
+}
+
+#table tr{
+   font-size: 40px;
+   text-align: center;
+   
+}
+
+#table img{
+   width: 200px;
+   height:250px
+}
+
+.bi{
+   color: black;
 }
