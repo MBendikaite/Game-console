@@ -16,6 +16,7 @@ function TurnOn(){
     }
 
    
+
 // Y (geltonas) mygtukas įjungia televizijos programą.
 
 function show_hide(){
@@ -56,7 +57,7 @@ function ProductList(){
     list = document.getElementById('table');
     if(list.style.visibility != 'visible'){
         list.style.visibility = 'visible'
-    } else{
+    } else {
         list.style.visibility = 'hidden'
     }
 }

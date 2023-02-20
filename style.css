@@ -1,5 +1,4 @@
 
-
 .container{
    position: relative;
    width: 1140px;
@@ -132,31 +131,33 @@ iframe{
 }
 
 #table{
-   background-size: cover;
+   background-color:black;
    background-repeat: no-repeat;
    border: 1px solid;
    border: transparent;
    position: absolute;
-   top: 60px;
+   top: 50px;
    width: 857px;
    left: 141px;
-   height:460px;
+   height: 471px;
    visibility: hidden;
-
+   color: rgb(179, 167, 167);
+   z-index: 1;
    
 }
 
 #table tr{
-   font-size: 40px;
+   font-size: 30px;
    text-align: center;
    
 }
 
 #table img{
+   padding-top: 40px;
    width: 200px;
    height:250px
 }
 
 .bi{
-   color: black;
+   color: rgb(179, 167, 167);
 }
