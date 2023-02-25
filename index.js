@@ -5,15 +5,16 @@
 // Tuo atveju rodoma atsisveikinimo žinutė.
 
 
+
 function TurnOn(){
     const welcome = document.getElementById('Hello')
-    welcome.addEventListener('click', TurnOn)
+    welcome.addEventListener("click", TurnOn)
     if(welcome.style.visibility != 'visible'){
         welcome.style.visibility = "visible"; 
     }
     else 
-    welcome.style.visibility = "visible"
-    }
+    TurnOff
+}
     
     function TurnOff(){
         const bye = document.getElementById('Goodbye')
@@ -22,16 +23,20 @@ function TurnOn(){
            bye.style.visibility = "hidden"; 
         }
         else 
-        bye.style.visibility = "visible"
+        {bye.style.visibility = "visible"}
+         return ''
           
         }
-       
+function cancel(){
+    let z = document.getElementById("background")
+}
+
    
-// Y (geltonas) mygtukas įjungia televizijos programą.
+//  Y (geltonas) mygtukas įjungia televizijos programą.
 
 function show_hide(){
     frm = document.getElementById('frame');
-    frm.addEventListener('ckick', show_hide)
+    frm.addEventListener('click', show_hide)
     if(frm.style.visibility != 'visible'){
         frm.style.visibility = "visible";
     }
@@ -42,16 +47,17 @@ function show_hide(){
 
 // B (raudonas) mygtukas grąžina vartotoją į pasisveikinimo ekraną.
 function Hello(){
-    hey = document.getElementById('Hello');
+    hey = document.getElementById('Hello')
     hey.addEventListener('click', Hello)
     
     if(hey.style.visibility != 'visible'){
-        hey.style.visibility = "visible";
+        hey.style.visibility = "visible"
     }
     else{
-        hey.style.visibility = "hidden";
-        
+        hey.style.visibility = "hidden"   
     }
+    
+    
 }
    
 // A (žalias) mygtukas įjungia google.com puslapį.
