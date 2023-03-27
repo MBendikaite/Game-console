@@ -47,6 +47,9 @@
   <div class="video">
     <iframe id="frame" src="https://www.youtube.com/embed/y-28CssnqEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
+  <div class="video">
+    <iframe id="google" src="https://www.google.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
     <div class="TVscreen"></div>
     <div class="container">
      <img 
@@ -56,14 +59,14 @@
     <div class="TVscreen"></div>
       <div class="container">
        <img src="images/remote.jpeg" alt="remote" style="width:40%"> 
-        <button class="btn1" id="buttonHi" onclick="TurnOn(); TurnOff(); cancel()"></button>
+        <button class="btn1" id="buttonHi" onclick="TurnOn(); TurnOff(this); cancel()"></button>
         <button class="btnX" id="buttonX" onclick="ProductList()"></button>
         <button class="btnY" id="buttonY" onclick="show_hide()"></button>
         <button class="btnB" id="buttonB" onclick="Hello()"></button>
-        <button class="btnA" id="buttonA" onclick="GotoLink(this)" value="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"></button>
+        <button class="btnA" id="buttonA" onclick="GotoLink()" ></button>
         </div>
 
-
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"> -->
       </div>
       </div> 
        </div>

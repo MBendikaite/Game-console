@@ -27,9 +27,9 @@ function TurnOn(){
          return ''
           
         }
-function cancel(){
-    let z = document.getElementById("background")
-}
+// function cancel(){
+//     let z = document.getElementById("background")
+// }
 
    
 //  Y (geltonas) mygtukas įjungia televizijos programą.
@@ -63,10 +63,26 @@ function Hello(){
 // A (žalias) mygtukas įjungia google.com puslapį.
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
 
-function GotoLink (link) {
-    console.log(link.value)
-    location.href = 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe';
- }
+function GotoLink(){
+let tv = document.getElementById('google')
+tv.addEventListener('click', GotoLink)
+if(tv.style.visibility != 'visible'){
+    tv.style.visibility = "visible";
+}
+else{
+    tv.style.visibility = "hidden";
+}
+}
+
+
+
+
+
+
+// function GotoLink (link) {
+//     console.log(link.value)
+//     location.href = 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe';
+//  }
 
  //X (mėlynas) mygtukas atvaizduoja galimų nusipirkti 
  //žaidimų sąrašą. Prie kiekvieno žaidimo rodoma nuotrauka, 
