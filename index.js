@@ -4,7 +4,18 @@
 // taip pat šis mygtukas atsakingas už konsolės išjugimą. 
 // Tuo atveju rodoma atsisveikinimo žinutė.
 
-
+function handlePowerButtonClick() {
+    const hello = document.getElementById('Hello');
+    const goodbye = document.getElementById('Goodbye');
+    
+    if (hello.classList.contains('visible')) { 
+        hello.classList.remove('visible'); 
+        goodbye.classList.add('visible');   
+    } else if (goodbye.classList.contains('visible')) {
+        goodbye.classList.remove('visible'); } else {
+        hello.classList.add('visible');
+    }
+}
 
 function TurnOn(){
     const welcome = document.getElementById('Hello')
@@ -13,7 +24,7 @@ function TurnOn(){
         welcome.style.visibility = "visible"; 
     }
     else 
-    TurnOff
+    TurnOff();
 }
     
     function TurnOff(){
@@ -23,13 +34,10 @@ function TurnOn(){
            bye.style.visibility = "hidden"; 
         }
         else 
-        {bye.style.visibility = "visible"}
-         return ''
+        bye.style.visibility = "visible"
+         
           
         }
-// function cancel(){
-//     let z = document.getElementById("background")
-// }
 
    
 //  Y (geltonas) mygtukas įjungia televizijos programą.
