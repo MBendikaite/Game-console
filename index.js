@@ -12,32 +12,33 @@ function handlePowerButtonClick() {
         hello.classList.remove('visible'); 
         goodbye.classList.add('visible');   
     } else if (goodbye.classList.contains('visible')) {
-        goodbye.classList.remove('visible'); } else {
+        goodbye.classList.remove('visible'); 
+    } else {
         hello.classList.add('visible');
     }
 }
 
-function TurnOn(){
-    const welcome = document.getElementById('Hello')
-    welcome.addEventListener("click", TurnOn)
-    if(welcome.style.visibility != 'visible'){
-        welcome.style.visibility = "visible"; 
-    }
-    else 
-    TurnOff();
-}
+// function TurnOn(){
+//     const welcome = document.getElementById('Hello')
+//     welcome.addEventListener("click", TurnOn)
+//     if(welcome.style.visibility != 'visible'){
+//         welcome.style.visibility = "visible"; 
+//     }
+//     else 
+//     TurnOff();
+// }
     
-    function TurnOff(){
-        const bye = document.getElementById('Goodbye')
-        bye.addEventListener('click', TurnOff)
-        if(bye.style.visibility != 'hidden'){
-           bye.style.visibility = "hidden"; 
-        }
-        else 
-        bye.style.visibility = "visible"
+    // function TurnOff(){
+    //     const bye = document.getElementById('Goodbye')
+    //     bye.addEventListener('click', TurnOff)
+    //     if(bye.style.visibility != 'hidden'){
+    //        bye.style.visibility = "hidden"; 
+    //     }
+    //     else 
+    //     bye.style.visibility = "visible"
          
           
-        }
+    //     }
 
    
 //  Y (geltonas) mygtukas įjungia televizijos programą.
